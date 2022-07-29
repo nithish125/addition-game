@@ -4,21 +4,27 @@ var arrheader2=[12,3,17,13,11]
 var arrheader3=[5,8,7,8,14]
 var arrheader4=[9,6,5,10,12]
 var arre=[]
-  var y = function neww(){
+ var  y =neww()
+  function neww(){
+    var ree=[]
 var que=document.querySelector(".que")
-var o=["7+4","2+8","9+3"]
+var o=["7+4","2+8","9+3","6+5","4+8"]
 for(i=0;i<1;i++)
 { 
     let ran=Math.floor(Math.random()*o.length);
-
       que.innerHTML=o[ran];
       o.splice(ran,1)
-
-      console.log(o)
+      //console.log(o)
       //console.log(que)
       let sp1=que.innerHTML
       let sp=sp1.split('');
-      console.log(sp)
+      console.log(sp1)
+     
+     if(ree){
+      ree.push(sp1)
+     }
+     console.log(ree.includes(sp1))
+     console.log(ree)
       let fin=parseInt( sp[0])+ parseInt(sp[2])
     console.log(fin)
     return fin
@@ -35,7 +41,6 @@ for (var j = 0; j < arra.length; j++) {
     th.appendChild(text);
     th.setAttribute("class","bor")
     rr.append(th) 
-    
     arre.push(th)
   }
   d.append(rr)
@@ -44,7 +49,7 @@ for (var j = 0; j < arra.length; j++) {
     function vl(){
    // console.log(a.innerHTML)
  // console.log(y)
-    if(a.innerHTML=="11"){
+    if(a.innerHTML==y){
         //console.log("hi")
       y= neww()
 
