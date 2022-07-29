@@ -4,12 +4,20 @@ var arrheader2=[12,3,17,13,11]
 var arrheader3=[5,8,7,8,14]
 var arrheader4=[9,6,5,10,12]
 var arre=[]
+var cir=document.createElement("div")
+    cir.setAttribute("class","cirs")
+    var ins=document.createElement("div")
+    ins.setAttribute("class","clip")
+    cir.append(ins)
+    var bd= document.querySelector(".bodyy")
+    bd.append(cir)
  var  y =neww()
   function neww(){
     var ree=[]
+    
 var que=document.querySelector(".que")
-var o=["7+4","2+8","9+3","6+5","4+8"]
-for(i=0;i<1;i++)
+var o=["7+4","2+8","9+3","6+5","4+8","8+7","9+5","9+8"]
+for(i=0;i<o.length;i++)
 { 
     let ran=Math.floor(Math.random()*o.length);
       que.innerHTML=o[ran];
@@ -24,11 +32,14 @@ for(i=0;i<1;i++)
       ree.push(sp1)
      }
      console.log(ree.includes(sp1))
-     console.log(ree)
+     
       let fin=parseInt( sp[0])+ parseInt(sp[2])
     console.log(fin)
+    console.log(ree)
     return fin
 }
+
+
 }
  y=neww()
 //console.log(arre)
@@ -47,6 +58,7 @@ for (var j = 0; j < arra.length; j++) {
   arre.forEach((a)=>{
     a.addEventListener("click",vl) 
     function vl(){
+      
    // console.log(a.innerHTML)
  // console.log(y)
     if(a.innerHTML==y){
@@ -54,7 +66,10 @@ for (var j = 0; j < arra.length; j++) {
       y= neww()
 
         a.setAttribute("class","blu")
+        
+
     }
+    
     }
 })
   //console.log(arre)
