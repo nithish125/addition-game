@@ -4,22 +4,27 @@ var arrheader2=[12,3,17,13,11]
 var arrheader3=[5,8,7,8,14]
 var arrheader4=[9,6,5,10,12]
 var arre=[]
-function neww(){
+  var y = function neww(){
 var que=document.querySelector(".que")
 var o=["7+4","2+8","9+3"]
-
-for(i=0;i<2;i++)
+for(i=0;i<1;i++)
 { 
     let ran=Math.floor(Math.random()*o.length);
-    
+
       que.innerHTML=o[ran];
       o.splice(ran,1)
-      console.log(ran)
-      console.log(que)
-      
+
+      console.log(o)
+      //console.log(que)
+      let sp1=que.innerHTML
+      let sp=sp1.split('');
+      console.log(sp)
+      let fin=parseInt( sp[0])+ parseInt(sp[2])
+    console.log(fin)
+    return fin
 }
 }
-neww()
+ y=neww()
 //console.log(arre)
 var d=document.querySelector(".dd")
 function looping(arra){
@@ -37,10 +42,12 @@ for (var j = 0; j < arra.length; j++) {
   arre.forEach((a)=>{
     a.addEventListener("click",vl) 
     function vl(){
-    console.log(a.innerHTML)
-    neww()
+   // console.log(a.innerHTML)
+ // console.log(y)
     if(a.innerHTML=="11"){
-        console.log("hi")
+        //console.log("hi")
+      y= neww()
+
         a.setAttribute("class","blu")
     }
     }
