@@ -4,7 +4,7 @@
 .bor1{
     width: 500px;
     height: 400px;
-    border: 2px solid;
+    border: 2px solid;color: aliceblue;
 }
 .blu{
     background-color: #ddd;

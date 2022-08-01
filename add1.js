@@ -28,19 +28,14 @@ var cir=document.createElement("div");
       if(i==ran){
         continue;
       }
-      emptyarr.push(o[i]);
-      
+      emptyarr.push(o[i]);   
     }
     o=emptyarr;
     console.log(o);
     
     return fin;
+  } 
   }
-  
-
-    
-  }
-
  y=neww();
 var d=document.querySelector(".dd");
 d.style.backgroundColor = "blue";
@@ -54,39 +49,29 @@ for (var j = 0; j < arra.length; j++) {
     rr.append(th) 
     arre.push(th);
     emp.push(arra[j]);
-    console.log(arra[4])
-
+    console.log(rr)
   }
   d.append(rr);
   arre.forEach((a)=>{
     a.addEventListener("click",vl);
     function vl(){
      var c=0;
-     
     if(a.innerHTML==y && o.length != 0){
       c=o.length;
       console.log()
-     
       y= neww();
         a.setAttribute("class","blu");
          a.style.backgroundColor = "yellow";
-       
+         a.style.color = "blue";  
     }
-    
     if(a.innerHTML==y && c == 0){
       d.style.backgroundColor = "orange";
-      //  a.addEventListener("click",() => {
-      //    location.reload();
-      //  });
-     
     }
-    
     }
 });
   d.setAttribute("class","bor1");
   d.setAttribute("border","2px solid");
 }
-
 looping(arrheader);
 looping(arrheader1);
 looping(arrheader2);
